@@ -11,7 +11,7 @@ export const viewStyle = {
 };
 
 export const textStyle = {
-  fontSize: 20,
+  fontSize: 30,
   color: "#ccc",
   width: "100%",
   textAlign: "center",
