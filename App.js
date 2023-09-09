@@ -17,7 +17,7 @@ const HomeScreen = ({ navigation }) => {
       <View style={buttonStyle}>
         <Button
           title="Open GitHub"
-          color="#0d1117"
+          color="#444654"
           onPress={handleNavigation}
         />
       </View>
