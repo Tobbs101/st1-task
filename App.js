@@ -1,59 +1,41 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Switch, TouchableOpacity } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Switch,
+  TouchableOpacity,
+  SafeAreaView,
+} from "react-native";
 
 export default function App() {
   const [darkTheme, setDarkTheme] = useState(false);
-  const [result, setResult] = useState("testing");
 
   return (
-    <View
+    <SafeAreaView
       style={{
         height: "100%",
         width: "100%",
         paddingVertical: 20,
         paddingHorizontal: 5,
-        backgroundColor: darkTheme ? "#ccc" : "#fff",
+        backgroundColor: "#ccc",
         alignItems: "center",
+        display: "flex",
+        justifyContent: "center",
       }}
     >
-      <Switch
-        value={darkTheme}
-        onValueChange={() => {
-          setDarkTheme(!darkTheme);
-        }}
-      ></Switch>
       <Text
         style={{
-          fontSize: 40,
+          fontSize: 20,
           color: "black",
-          backgroundColor: "#ddd",
           width: "100%",
-          textAlign: "right",
+          textAlign: "center",
           paddingRight: 20,
           paddingVertical: 5,
         }}
       >
-        {result}
+        Tobi Idowu
       </Text>
-      <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
-        <TouchableOpacity
-          style={{
-            padding: 10,
-            borderRadius: 4,
-            backgroundColor: "#ccc",
-            height: 70,
-            width: 70,
-            margin: 16,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Text style={{ fontSize: 37, color: "black", textAlign: "center" }}>
-            1
-          </Text>
-        </TouchableOpacity>
-      </View>
-    </View>
+    </SafeAreaView>
   );
 }
