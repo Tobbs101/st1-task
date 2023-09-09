@@ -3,7 +3,7 @@ export const viewStyle = {
   width: "100%",
   paddingVertical: 20,
   paddingHorizontal: 5,
-  backgroundColor: "#ccc",
+  backgroundColor: "#0d1117",
   alignItems: "center",
   display: "flex",
   justifyContent: "center",
@@ -12,7 +12,7 @@ export const viewStyle = {
 
 export const textStyle = {
   fontSize: 20,
-  color: "black",
+  color: "#ccc",
   width: "100%",
   textAlign: "center",
   paddingRight: 20,
@@ -24,4 +24,8 @@ export const imageStyle = {
   height: 150,
   borderRadius: 75,
   marginBottom: 10,
+};
+
+export const webViewStyle = {
+  flex: 1, // Take up all available space
 };
