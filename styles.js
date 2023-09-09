@@ -7,11 +7,11 @@ export const viewStyle = {
   alignItems: "center",
   display: "flex",
   justifyContent: "center",
-  gap: 30,
+  gap: 20,
 };
 
 export const textStyle = {
-  fontSize: 30,
+  fontSize: 25,
   color: "#ccc",
   width: "100%",
   textAlign: "center",
@@ -20,9 +20,9 @@ export const textStyle = {
 };
 
 export const imageStyle = {
-  width: 150,
-  height: 150,
-  borderRadius: 75,
+  width: 200,
+  height: 200,
+  borderRadius: 10,
   marginBottom: 10,
 };
 

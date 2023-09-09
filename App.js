@@ -6,6 +6,10 @@ import WebViewScreen from "./pages/WebViewScreen";
 import { createStackNavigator } from "@react-navigation/stack";
 
 const HomeScreen = ({ navigation }) => {
+  const handleNavigation = () => {
+    navigation.navigate("GitHub");
+  };
+
   return (
     <SafeAreaView style={viewStyle}>
       <Text style={textStyle}>Tobi Idowu</Text>
@@ -14,7 +18,7 @@ const HomeScreen = ({ navigation }) => {
         <Button
           title="Open GitHub"
           color="#0d1117"
-          onPress={() => navigation.navigate("GitHub")}
+          onPress={handleNavigation}
         />
       </View>
     </SafeAreaView>
