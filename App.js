@@ -1,25 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Text, SafeAreaView, Image, Button, View } from "react-native";
-import { WebView } from "react-native-webview";
 import { viewStyle, textStyle, imageStyle, buttonStyle } from "./styles";
+import { NavigationContainer } from "@react-navigation/native";
+import WebViewScreen from "./pages/WebViewScreen";
+import { createStackNavigator } from "@react-navigation/stack";
 
-export default function App() {
-  const [toggleWebView, setToggleWebView] = useState(false);
-  const githubUrl = "https://github.com/Tobbs101";
-
-  const handleGitHubPage = () => {
-    setToggleWebView(!toggleWebView);
-  };
-
-  if (toggleWebView) {
-    return (
-      <SafeAreaView style={{ flex: 1 }}>
-        <Button title="Return to App" onPress={handleGitHubPage} />
-        <WebView source={{ uri: githubUrl }} />
-      </SafeAreaView>
-    );
-  }
-
+const HomeScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={viewStyle}>
       <Text style={textStyle}>Tobi Idowu</Text>
@@ -27,10 +13,23 @@ export default function App() {
       <View style={buttonStyle}>
         <Button
           title="Open GitHub"
-          color={"#0d1117"}
-          onPress={handleGitHubPage}
+          color="#0d1117"
+          onPress={() => navigation.navigate("GitHub")}
         />
       </View>
     </SafeAreaView>
+  );
+};
+
+export default function App() {
+  const Stack = createStackNavigator();
+
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="GitHub" component={WebViewScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }

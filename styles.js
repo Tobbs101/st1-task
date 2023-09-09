@@ -3,7 +3,7 @@ export const viewStyle = {
   width: "100%",
   paddingVertical: 20,
   paddingHorizontal: 5,
-  backgroundColor: "#0d1117",
+  backgroundColor: "#444654",
   alignItems: "center",
   display: "flex",
   justifyContent: "center",
@@ -30,10 +30,4 @@ export const buttonStyle = {
   backgroundColor: "#ccc",
   borderRadius: 5,
   paddingHorizontal: 20,
-};
-
-export const webViewStyle = {
-  flex: 1,
-  backgroundColor: "red",
-  marginTop: 20,
 };
