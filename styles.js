@@ -7,6 +7,7 @@ export const viewStyle = {
   alignItems: "center",
   display: "flex",
   justifyContent: "center",
+  gap: 20,
 };
 
 export const textStyle = {
@@ -16,4 +17,11 @@ export const textStyle = {
   textAlign: "center",
   paddingRight: 20,
   paddingVertical: 5,
+};
+
+export const imageStyle = {
+  width: 150,
+  height: 150,
+  borderRadius: 75,
+  marginBottom: 10,
 };
