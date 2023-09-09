@@ -7,7 +7,7 @@ export const viewStyle = {
   alignItems: "center",
   display: "flex",
   justifyContent: "center",
-  gap: 20,
+  gap: 30,
 };
 
 export const textStyle = {
@@ -26,6 +26,14 @@ export const imageStyle = {
   marginBottom: 10,
 };
 
+export const buttonStyle = {
+  backgroundColor: "#ccc",
+  borderRadius: 10,
+  paddingHorizontal: 20,
+};
+
 export const webViewStyle = {
-  flex: 1, // Take up all available space
+  flex: 1,
+  backgroundColor: "red",
+  marginTop: 20,
 };
