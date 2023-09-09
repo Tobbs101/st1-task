@@ -28,7 +28,7 @@ export const imageStyle = {
 
 export const buttonStyle = {
   backgroundColor: "#ccc",
-  borderRadius: 10,
+  borderRadius: 5,
   paddingHorizontal: 20,
 };
 
